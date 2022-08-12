@@ -9,26 +9,28 @@
 <body>
     <h1>TAKING user input </h1>
 <form onsubmit="dosum();return false">
-    num1:<input id="num1 type="number" required>
+    num1:<input id="num1" type="text">
 <br>
-num2:<input id =num2 type ="number" required>
+num2:<input id =num2 type ="text">
 <br>
-<button type="submit"sum ></button>
+<button type="submit">Sum</button>
+    
 
 
-</form>
+
 <h3 id="result"> </h3>
 <script>
     function dosum(){ 
-        let firstNumber = Number(  document.querySelector("#num1").value)
-        let secondNumber=+document.querySelector(#"num1").value
-        console.log(firstNumber,secondNumber)
+        let firstNumber =+document.querySelector("#num1").value
+        let secondNumber=+document.querySelector("#num2").value
         let sum=firstNumber+secondNumber;
-        document.querySelector("#reult").innerHTML=sum;
+        console.log(firstNumber,secondNumber);
+        console.log(sum);
+        
         
     }
 </script>
-
+</form>
 
 
 
