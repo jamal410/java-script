@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>making calculator</h1>
-    <form onsubmit="domultipication()">
-    </form>
-
-    <script> function domultipication(){
-        
-    } 
-
-
-    
-
-
-
-</script>
-    num1:<input type ="text">
-    <br>
-    num2:<input type ="text">
-    <br>
-    <button type="multipication">multipication</button>
-    
-        
+    <form onsubmit="domultipication() ;return false">
 
 
 
 
-    </script>
+        num1:<input id="num1" type="text">
+        <br>
+        num2:<input id="num2" type="text">
+        <br>
+        <button type="multipication">multipication</button>
+
+
+        <h3 id="result" > </h3>
+
+
+        <script>
+            function domultipication() {
+                let firstNumber = Number(document.querySelector("#num1").value)
+                let secondNumber = +document.querySelector("#num2").value
+                console.log(firstNumber, secondNumber)
+
+                let multiplication = firstNumber * secondNumber;
+                document.querySelector("#result").innerHTML = multiplication;
+            }
+
+
+
+        </script>
+
+
+
+
+        </script>
 </body>
+
 </html>
